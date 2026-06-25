@@ -1,4 +1,4 @@
-# Tarea — Módulo IA generativa aplicada al marketing y empresa (v2 — mejorada)
+# Tarea — Módulo IA generativa aplicada al marketing y empresa
 
 **Alumno:** Carlos Oberreuter · **Profesor:** Arnau Vendrell Pérez
 **Base:** propuesta propia (`Tarea_CCM_Ley21719_Carlos_Oberreuter.docx`), evaluada y mejorada con los conceptos del módulo.
