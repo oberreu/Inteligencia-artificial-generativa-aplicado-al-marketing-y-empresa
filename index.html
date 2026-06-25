@@ -332,6 +332,20 @@
     }
     .share a:hover { background: var(--accent); color: #fff; }
 
+    /* Artículos relacionados (clúster) */
+    .related { max-width: var(--ancho); margin: 44px auto 0; padding: 0 24px; }
+    .related h2 { font-family: var(--serif); font-size: 24px; color: var(--navy); margin: 0 0 16px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .related-card {
+      display: block; text-decoration: none; color: inherit;
+      border: 1px solid var(--line); border-radius: 12px; padding: 18px;
+      background: #fff; transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .related-card:hover { box-shadow: 0 16px 32px -22px rgba(13,27,42,0.5); transform: translateY(-2px); border-color: #cfe6f5; }
+    .related-card .rc-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--accent); }
+    .related-card .rc-title { display: block; font-weight: 700; color: var(--navy); font-size: 16px; line-height: 1.35; margin: 8px 0 6px; }
+    .related-card .rc-desc { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+
     footer {
       max-width: var(--ancho); margin: 48px auto 36px; padding: 24px;
       border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; line-height: 1.7;
@@ -342,6 +356,7 @@
       .dek { font-size: 18px; }
       article.body h2 { font-size: 24px; }
       .domains { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr; }
       body { font-size: 17px; }
     }
   </style>
@@ -551,6 +566,27 @@
     <a href="#">Cumplimiento</a>
     <a href="#">Ley 21.719</a>
   </div>
+
+  <section class="related">
+    <h2>Sigue leyendo</h2>
+    <div class="related-grid">
+      <a class="related-card" href="multas-ley-21719.html">
+        <span class="rc-tag">Sanciones</span>
+        <span class="rc-title">Multas de la Ley 21.719: tramos y UTM</span>
+        <span class="rc-desc">Cómo se gradúan las sanciones y cómo reducir el riesgo.</span>
+      </a>
+      <a class="related-card" href="evaluacion-impacto-eipd-ley-21719.html">
+        <span class="rc-tag">Evaluación de impacto</span>
+        <span class="rc-title">EIPD: cuándo es obligatoria bajo la Ley 21.719</span>
+        <span class="rc-desc">Cómo y cuándo evaluar el impacto en privacidad.</span>
+      </a>
+      <a class="related-card" href="notificacion-brechas-ley-21719.html">
+        <span class="rc-tag">Brechas de datos</span>
+        <span class="rc-title">Notificación de brechas: plazos y destinatarios</span>
+        <span class="rc-desc">Qué exige la ley cuando ocurre un incidente.</span>
+      </a>
+    </div>
+  </section>
 
   <div class="author-box">
     <div class="author-avatar">CO</div>
