@@ -14,7 +14,7 @@ El artículo se publica como página estática (GitHub Pages):
 
 | Archivo | Descripción |
 |---------|-------------|
-| [`index.html`](index.html) | Artículo de blog implementado (HTML + SVG, estilo visual Vuela.ai, SEO/GEO con JSON-LD) |
+| [`index.html`](index.html) | Artículo de blog implementado (HTML + imagen destacada generada con IA, SEO/GEO con JSON-LD) |
 | [`articulo/Tarea_Articulo_Ley21719_CSA.md`](articulo/Tarea_Articulo_Ley21719_CSA.md) | Entregable completo: argumentación, keyword research, artículo y justificación metodológica |
 | [`RESUMEN_Modulo_y_Clase.md`](RESUMEN_Modulo_y_Clase.md) | Resumen del temario del módulo y de la sesión en vivo |
 

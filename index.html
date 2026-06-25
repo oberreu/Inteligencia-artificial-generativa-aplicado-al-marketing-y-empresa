@@ -15,7 +15,9 @@
   <meta property="og:title" content="Ley 21.719 y la nube: el mapa de controles de la CSA" />
   <meta property="og:description" content="La Ley 21.719 exige evidencia, no políticas. El Cloud Controls Matrix de CSA ya tiene el mapa de controles que necesitas antes de diciembre de 2026." />
   <meta property="og:locale" content="es_CL" />
+  <meta property="og:image" content="https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/assets/ley-21719-ccm.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/assets/ley-21719-ccm.png" />
 
   <!-- Datos estructurados (GEO/SEO) -->
   <script type="application/ld+json">
@@ -101,9 +103,9 @@
     }
     .byline b { color: var(--tinta); }
 
-    /* Imagen destacada (SVG) */
+    /* Imagen destacada */
     figure.hero { margin: 28px auto 8px; max-width: var(--ancho); padding: 0 24px; }
-    figure.hero svg { width: 100%; height: auto; border-radius: var(--radio); display: block; box-shadow: 0 20px 50px -24px rgba(106,61,240,0.55); }
+    figure.hero img { width: 100%; height: auto; border-radius: var(--radio); display: block; box-shadow: 0 20px 50px -24px rgba(11,16,48,0.55); }
     figcaption { font-size: 13px; color: var(--gris); margin-top: 10px; text-align: center; }
 
     /* Cuerpo */
@@ -150,6 +152,9 @@
       margin: 34px 0; padding: 16px 18px; border-left: 4px solid var(--celeste);
       background: #f0f9ff; border-radius: 0 12px 12px 0; font-size: 15px; color: #0c4a6e;
     }
+    .sources { font-size: 14px; color: var(--gris); margin: 0 0 8px; }
+    .sources a { color: var(--azul); text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
 
     footer {
       max-width: var(--ancho); margin: 40px auto; padding: 24px;
@@ -182,91 +187,11 @@
     </div>
   </header>
 
-  <!-- Imagen destacada: estilo Vuela.ai (avión de papel + grilla de controles + silueta de Chile) -->
+  <!-- Imagen destacada -->
   <figure class="hero">
-    <svg viewBox="0 0 1200 630" role="img" aria-label="Avión de papel trazando una ruta sobre una grilla de controles de seguridad y la silueta de Chile">
-      <defs>
-        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#6a3df0"/>
-          <stop offset="0.55" stop-color="#3b46e8"/>
-          <stop offset="1" stop-color="#2563eb"/>
-        </linearGradient>
-        <linearGradient id="plane" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#ffffff"/>
-          <stop offset="1" stop-color="#dbeafe"/>
-        </linearGradient>
-        <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0b1030" flood-opacity="0.35"/>
-        </filter>
-      </defs>
-
-      <rect width="1200" height="630" rx="0" fill="url(#bg)"/>
-
-      <!-- grilla de controles CCM -->
-      <g fill="#ffffff" opacity="0.10">
-        <!-- filas x columnas de cuadros redondeados -->
-        <g>
-          <rect x="80"  y="120" width="56" height="56" rx="12"/>
-          <rect x="160" y="120" width="56" height="56" rx="12"/>
-          <rect x="240" y="120" width="56" height="56" rx="12"/>
-          <rect x="320" y="120" width="56" height="56" rx="12"/>
-          <rect x="400" y="120" width="56" height="56" rx="12"/>
-          <rect x="480" y="120" width="56" height="56" rx="12"/>
-          <rect x="80"  y="200" width="56" height="56" rx="12"/>
-          <rect x="160" y="200" width="56" height="56" rx="12"/>
-          <rect x="240" y="200" width="56" height="56" rx="12"/>
-          <rect x="320" y="200" width="56" height="56" rx="12"/>
-          <rect x="400" y="200" width="56" height="56" rx="12"/>
-          <rect x="480" y="200" width="56" height="56" rx="12"/>
-          <rect x="80"  y="280" width="56" height="56" rx="12"/>
-          <rect x="160" y="280" width="56" height="56" rx="12"/>
-          <rect x="240" y="280" width="56" height="56" rx="12"/>
-          <rect x="320" y="280" width="56" height="56" rx="12"/>
-          <rect x="400" y="280" width="56" height="56" rx="12"/>
-          <rect x="480" y="280" width="56" height="56" rx="12"/>
-          <rect x="80"  y="360" width="56" height="56" rx="12"/>
-          <rect x="160" y="360" width="56" height="56" rx="12"/>
-          <rect x="240" y="360" width="56" height="56" rx="12"/>
-          <rect x="320" y="360" width="56" height="56" rx="12"/>
-          <rect x="400" y="360" width="56" height="56" rx="12"/>
-          <rect x="480" y="360" width="56" height="56" rx="12"/>
-        </g>
-      </g>
-
-      <!-- tres controles "activos" iluminados: DSP, IAM, LOG -->
-      <g>
-        <rect x="160" y="200" width="56" height="56" rx="12" fill="#38bdf8" opacity="0.9"/>
-        <rect x="320" y="280" width="56" height="56" rx="12" fill="#a78bfa" opacity="0.95"/>
-        <rect x="480" y="360" width="56" height="56" rx="12" fill="#34d399" opacity="0.9"/>
-        <text x="188" y="234" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0b1030" text-anchor="middle">DSP</text>
-        <text x="348" y="314" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0b1030" text-anchor="middle">IAM</text>
-        <text x="508" y="394" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0b1030" text-anchor="middle">LOG</text>
-      </g>
-
-      <!-- silueta estilizada de Chile (franja larga a la derecha) -->
-      <path d="M965 70
-               C 980 120, 972 170, 985 220
-               C 996 270, 988 320, 1000 370
-               C 1010 420, 1004 470, 1014 520
-               C 1019 545, 1016 565, 1006 580
-               L 1040 580
-               C 1052 560, 1056 535, 1050 510
-               C 1040 460, 1046 410, 1036 360
-               C 1026 310, 1034 260, 1022 210
-               C 1011 160, 1018 110, 1004 70 Z"
-            fill="#ffffff" opacity="0.16"/>
-
-      <!-- estela del avión -->
-      <path d="M140 470 C 360 430, 560 520, 760 360 S 1000 220, 1080 150"
-            fill="none" stroke="#bae6fd" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.9"/>
-
-      <!-- avión de papel (guiño a "Vuela") -->
-      <g filter="url(#soft)" transform="translate(1040 120) rotate(18)">
-        <path d="M0 0 L150 56 L66 70 L40 150 L26 84 Z" fill="url(#plane)"/>
-        <path d="M0 0 L66 70 L40 150 Z" fill="#cdd9f7"/>
-      </g>
-    </svg>
-    <figcaption>Imagen destacada — estilo Vuela.ai: degradados violeta-azul, avión de papel y la grilla de controles (DSP · IAM · LOG) sobre la silueta de Chile.</figcaption>
+    <img src="assets/ley-21719-ccm.png" width="1200" height="630"
+         alt="La matriz de controles del CCM alimenta evidencias operativas —identidad, cifrado, logs y verificación— que atraviesan el territorio de Chile." />
+    <figcaption>Imagen destacada — el Cloud Controls Matrix se transforma en evidencia operativa para Chile: la matriz de controles (izquierda) alimenta los registros verificables (derecha) que la Agencia podrá exigir.</figcaption>
   </figure>
 
   <article class="body">
@@ -279,7 +204,7 @@
     <p>En mi rol liderando equipos de arquitectos de Cloud y AI en Microsoft Hispanoamérica veo el mismo patrón en distintos países: las empresas confunden tener una política de privacidad publicada con estar en cumplimiento. La ley exige registro de actividades de tratamiento, evaluaciones de impacto en privacidad, notificación de brechas y medidas de seguridad <strong>demostrables</strong>. Esa palabra, demostrables, separa un proyecto real de un ejercicio de marketing legal.</p>
 
     <h2>El CCM no es otro framework para aprender desde cero</h2>
-    <p>Si tu empresa opera en la nube, probablemente ya está, sin saberlo, a mitad de camino de varios de los 17 dominios del CCM. No inventa controles nuevos: ordena lo que ya deberías tener y lo conecta con ISO 27001, NIST y el RGPD, estándares con los que la 21.719 está alineada.</p>
+    <p>Si tu empresa opera en la nube, probablemente ya está, sin saberlo, a mitad de camino. El Cloud Controls Matrix v4.1 organiza <strong>197 controles en 17 dominios</strong> y no inventa controles nuevos: ordena lo que ya deberías tener y lo conecta con ISO 27001, NIST y el RGPD, estándares con los que la 21.719 está alineada.</p>
 
     <div class="domains">
       <div class="domain"><b>DSP — Data Security &amp; Privacy</b><small>Responde al registro de actividades de tratamiento: qué datos tienes, con qué fin y por cuánto tiempo.</small></div>
@@ -299,10 +224,15 @@
     </div>
 
     <p class="note"><strong>Nota de transparencia:</strong> las cifras legales (montos de multas por tramo, plazos de notificación de brechas y numeración de artículos) deben validarse contra el texto oficial publicado en el Diario Oficial / BCN antes de publicar. Se evitó deliberadamente importar parámetros del RGPD (p. ej., el "4 % de ingresos" o las "72 horas").</p>
+
+    <p class="sources"><strong>Fuentes verificadas:</strong>
+      <a href="https://www.bcn.cl/leychile/navegar?idNorma=1209272" rel="nofollow noopener" target="_blank">Ley 21.719 — texto oficial (Biblioteca del Congreso Nacional de Chile)</a> ·
+      <a href="https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4" rel="nofollow noopener" target="_blank">Cloud Controls Matrix v4.1 (Cloud Security Alliance)</a>.
+    </p>
   </article>
 
   <footer class="wrap">
-    © 2026 CloudSecure · Artículo elaborado como entrega del módulo "IA generativa aplicada al marketing y empresa" (Máster NTIC, UCM). Metodología: research con Claude (modo investigación), imagen destacada estilo Vuela.ai, verificación de fuentes y optimización SEO/GEO.
+    © 2026 CloudSecure · Artículo elaborado como entrega del módulo "IA generativa aplicada al marketing y empresa" (Máster NTIC, UCM). Metodología: research con Claude (modo investigación), imagen destacada generada con IA y revisada por el autor, verificación de fuentes y optimización SEO/GEO.
   </footer>
 
 </body>
