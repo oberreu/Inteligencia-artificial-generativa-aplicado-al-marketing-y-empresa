@@ -56,7 +56,12 @@
     "keywords": "Ley 21.719, Cloud Controls Matrix, CCM, Cloud Security Alliance, protección de datos Chile, cumplimiento nube",
     "publisher": {
       "@type": "Organization",
-      "name": "CSA Latam Hub"
+      "name": "CSA Latam Hub",
+      "url": "https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/assets/ley-21719-og.jpg"
+      }
     },
     "datePublished": "2026-06-24",
     "dateModified": "2026-06-25"
@@ -225,6 +230,13 @@
     .faq summary::after { content: "+"; color: var(--accent); font-size: 22px; font-weight: 700; }
     .faq details[open] summary::after { content: "−"; }
     .faq details p { margin: 0 0 14px; color: #475569; font-size: 15px; line-height: 1.6; }
+
+    /* Glosario */
+    .glossary { max-width: var(--ancho); margin: 40px auto 0; padding: 0 24px; }
+    .glossary h2 { font-family: var(--serif); font-size: 27px; color: var(--navy); margin: 0 0 16px; }
+    .glossary dl { margin: 0; display: grid; gap: 14px; }
+    .glossary dt { font-weight: 700; color: var(--navy); font-size: 16px; }
+    .glossary dd { margin: 4px 0 0; color: #475569; font-size: 15px; line-height: 1.6; }
 
     /* Cuerpo */
     article.body { max-width: var(--ancho); margin: 26px auto 0; padding: 0 24px; }
@@ -602,6 +614,37 @@
     </details>
   </section>
 
+  <section class="glossary" aria-label="Glosario">
+    <h2>Glosario rápido</h2>
+    <dl>
+      <dt>Ley 21.719</dt>
+      <dd>Ley chilena que regula la protección y el tratamiento de datos personales. Se publicó en diciembre de 2024 y entra en plena vigencia el 1 de diciembre de 2026.</dd>
+      <dt>Agencia de Protección de Datos Personales</dt>
+      <dd>Organismo creado por la Ley 21.719, encargado de fiscalizar el cumplimiento y aplicar las sanciones.</dd>
+      <dt>UTM (Unidad Tributaria Mensual)</dt>
+      <dd>Valor de referencia reajustable que fija el Estado de Chile. La ley expresa las multas en UTM para mantener su valor real frente a la inflación.</dd>
+      <dt>Cloud Controls Matrix (CCM)</dt>
+      <dd>Marco de control de la Cloud Security Alliance que organiza 197 controles en 17 dominios y los mapea a ISO 27001, NIST y el RGPD.</dd>
+      <dt>EIPD (Evaluación de Impacto en Protección de Datos)</dt>
+      <dd>Análisis previo obligatorio cuando un tratamiento puede generar alto riesgo para los derechos de los titulares (art. 15 ter de la Ley 21.719).</dd>
+    </dl>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "name": "Glosario: Ley 21.719 y Cloud Controls Matrix",
+    "hasDefinedTerm": [
+      {"@type":"DefinedTerm","name":"Ley 21.719","description":"Ley chilena de protección de datos personales; vigencia plena el 1 de diciembre de 2026."},
+      {"@type":"DefinedTerm","name":"Agencia de Protección de Datos Personales","description":"Organismo que fiscaliza el cumplimiento de la Ley 21.719 y aplica las sanciones."},
+      {"@type":"DefinedTerm","name":"UTM","description":"Unidad Tributaria Mensual; unidad reajustable en que la ley expresa las multas."},
+      {"@type":"DefinedTerm","name":"Cloud Controls Matrix","description":"Marco de la Cloud Security Alliance con 197 controles en 17 dominios."},
+      {"@type":"DefinedTerm","name":"EIPD","description":"Evaluación de Impacto en Protección de Datos exigida por el art. 15 ter para tratamientos de alto riesgo."}
+    ]
+  }
+  </script>
+
   <div class="tags">
     <a href="#">Zero Trust</a>
     <a href="#">Protección de Datos</a>
@@ -651,6 +694,8 @@
 
   <footer class="wrap">
     © 2026 CSA Latam Hub · Artículo elaborado como entrega del módulo "IA generativa aplicada al marketing y empresa" (Máster NTIC, UCM). Metodología: research con Claude (modo investigación), imagen destacada generada con IA y revisada por el autor, verificación de fuentes y optimización SEO/GEO.
+    <br><br>
+    «CSA Latam Hub» es un proyecto académico independiente, sin afiliación oficial con Cloud Security Alliance. Responsable editorial: Carlos Oberreuter.
   </footer>
 
 </body>
