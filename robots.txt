@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/sitemap.xml
