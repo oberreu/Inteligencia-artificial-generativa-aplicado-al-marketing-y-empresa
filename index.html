@@ -34,22 +34,27 @@
       "knowsAbout": ["Ciberseguridad", "Cloud Security Alliance", "Cloud Controls Matrix", "Ley 21.719", "Zero Trust"]
     },
     "about": ["Ley 21.719", "Cloud Controls Matrix", "Protección de datos personales", "Cloud Security Alliance"],
+    "publisher": {
+      "@type": "Organization",
+      "name": "CSA Latam Hub"
+    },
     "datePublished": "2026-06-24"
   }
   </script>
 
   <style>
     :root {
-      --ink: #0d1b2a;
-      --navy: #0f2747;
-      --accent: #1d4ed8;
-      --accent-soft: #eef3ff;
-      --teal: #0e7490;
+      --ink: #1a2433;
+      --navy: #1b365d;
+      --accent: #0079c1;
+      --accent-bright: #00a3e0;
+      --accent-soft: #e8f4fb;
+      --teal: #00a3e0;
       --muted: #5a6473;
-      --soft: #f7f9fc;
-      --line: #e6e9f0;
-      --radio: 14px;
-      --ancho: 740px;
+      --soft: #f5f8fb;
+      --line: #e3e8ef;
+      --radio: 12px;
+      --ancho: 760px;
       --sans: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
       --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
     }
@@ -77,11 +82,11 @@
     }
     .brand { display: flex; align-items: center; gap: 11px; }
     .mark {
-      width: 34px; height: 34px; border-radius: 9px;
+      width: 38px; height: 38px; border-radius: 9px;
       background: linear-gradient(135deg, var(--navy), var(--accent));
       color: #fff; display: grid; place-items: center;
-      font-weight: 800; font-size: 16px; letter-spacing: -0.5px;
-      box-shadow: 0 6px 16px -6px rgba(29,78,216,0.6);
+      font-weight: 800; font-size: 13px; letter-spacing: -0.3px;
+      box-shadow: 0 6px 16px -6px rgba(0,121,193,0.6);
     }
     .brand-name { font-weight: 700; letter-spacing: -0.3px; font-size: 18px; color: var(--ink); }
     .brand-name span { color: var(--accent); }
@@ -192,6 +197,51 @@
     .sources a { color: var(--accent); text-decoration: none; }
     .sources a:hover { text-decoration: underline; }
 
+    /* Breadcrumb estilo CSA */
+    .breadcrumb {
+      max-width: var(--ancho); margin: 18px auto 0; padding: 0 24px;
+      font-size: 13px; color: var(--muted);
+    }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: var(--muted); margin: 0 7px; }
+    .breadcrumb .current { color: var(--ink); }
+
+    /* Tags de temas */
+    .tags { max-width: var(--ancho); margin: 30px auto 0; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 9px; }
+    .tags a {
+      font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none;
+      background: var(--accent-soft); border: 1px solid #cfe6f5;
+      padding: 6px 13px; border-radius: 999px; transition: background .2s ease;
+    }
+    .tags a:hover { background: #d7ecf8; }
+
+    /* Caja About the Author estilo CSA */
+    .author-box {
+      max-width: var(--ancho); margin: 28px auto 0; padding: 24px;
+      display: flex; gap: 18px; align-items: flex-start;
+      border: 1px solid var(--line); border-radius: var(--radio); background: var(--soft);
+    }
+    .author-box .author-avatar {
+      width: 64px; height: 64px; border-radius: 50%; flex: 0 0 64px;
+      background: linear-gradient(135deg, var(--navy), var(--accent));
+      color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 22px;
+    }
+    .author-box h4 { margin: 0 0 4px; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); }
+    .author-box .author-name { font-size: 18px; font-weight: 700; color: var(--navy); margin: 0 0 4px; }
+    .author-box .author-role { font-size: 14px; color: var(--accent); font-weight: 600; margin: 0 0 8px; }
+    .author-box p { margin: 0; font-size: 14.5px; color: #475569; line-height: 1.6; }
+
+    /* Compartir */
+    .share { max-width: var(--ancho); margin: 22px auto 0; padding: 0 24px; display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--muted); }
+    .share .share-links { display: flex; gap: 8px; }
+    .share a {
+      width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+      border: 1px solid var(--line); color: var(--accent); text-decoration: none; font-weight: 700;
+      transition: background .2s ease, color .2s ease;
+    }
+    .share a:hover { background: var(--accent); color: #fff; }
+
     footer {
       max-width: var(--ancho); margin: 48px auto 36px; padding: 24px;
       border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; line-height: 1.7;
@@ -212,11 +262,15 @@
 
   <div class="topbar">
     <div class="brand">
-      <div class="mark">CS</div>
-      <div class="brand-name">Cloud<span>Secure</span></div>
+      <div class="mark">CSA</div>
+      <div class="brand-name">CSA <span>Latam Hub</span></div>
     </div>
-    <div class="nav-tag">Cumplimiento &amp; Nube</div>
+    <div class="nav-tag">Industry Insights</div>
   </div>
+
+  <nav class="breadcrumb" aria-label="Ruta de navegación">
+    <a href="#">Home</a><span>›</span><a href="#">Industry Insights</a><span>›</span><span class="current">Ley 21.719 y la nube</span>
+  </nav>
 
   <header class="post">
     <span class="eyebrow">Protección de datos · Chile</span>
@@ -276,8 +330,34 @@
     </p>
   </article>
 
+  <div class="tags">
+    <a href="#">Zero Trust</a>
+    <a href="#">Protección de Datos</a>
+    <a href="#">Cloud Controls Matrix</a>
+    <a href="#">Cumplimiento</a>
+    <a href="#">Ley 21.719</a>
+  </div>
+
+  <div class="author-box">
+    <div class="author-avatar">CO</div>
+    <div>
+      <h4>Sobre el autor</h4>
+      <p class="author-name">Carlos Oberreuter</p>
+      <p class="author-role">Senior Cloud Solution Architect Manager of Cybersecurity</p>
+      <p>Lidera equipos de arquitectura de Cloud y ciberseguridad en Hispanoamérica, con foco en Zero Trust, cumplimiento y adopción segura de la nube. Instructor CCSK y contribuyente del ecosistema de la Cloud Security Alliance.</p>
+    </div>
+  </div>
+
+  <div class="share">
+    <span>Comparte este contenido:</span>
+    <div class="share-links">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/" rel="noopener" target="_blank" aria-label="Compartir en LinkedIn">in</a>
+      <a href="https://twitter.com/intent/tweet?text=Ley%2021.719%20y%20la%20nube%3A%20el%20mapa%20de%20controles%20de%20la%20CSA&url=https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/" rel="noopener" target="_blank" aria-label="Compartir en X">X</a>
+    </div>
+  </div>
+
   <footer class="wrap">
-    © 2026 CloudSecure · Artículo elaborado como entrega del módulo "IA generativa aplicada al marketing y empresa" (Máster NTIC, UCM). Metodología: research con Claude (modo investigación), imagen destacada generada con IA y revisada por el autor, verificación de fuentes y optimización SEO/GEO.
+    © 2026 CSA Latam Hub · Artículo elaborado como entrega del módulo "IA generativa aplicada al marketing y empresa" (Máster NTIC, UCM). Metodología: research con Claude (modo investigación), imagen destacada generada con IA y revisada por el autor, verificación de fuentes y optimización SEO/GEO.
   </footer>
 
 </body>
