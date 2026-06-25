@@ -332,6 +332,23 @@
     }
     .share a:hover { background: var(--accent); color: #fff; }
 
+    /* Tabla de mapeo Ley -> CCM */
+    .map-wrap { margin: 18px 0 8px; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radio); }
+    .map-table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 560px; }
+    .map-table thead th {
+      background: var(--navy); color: #fff; text-align: left; font-weight: 700;
+      padding: 12px 14px; font-size: 13.5px; letter-spacing: 0.2px;
+    }
+    .map-table td { padding: 11px 14px; border-top: 1px solid var(--line); vertical-align: top; color: #334155; }
+    .map-table tbody tr:nth-child(even) { background: var(--soft); }
+    .map-table .dom {
+      display: inline-block; font-weight: 800; font-size: 12px; letter-spacing: 0.4px;
+      color: var(--accent); background: var(--accent-soft); border: 1px solid #cfe6f5;
+      border-radius: 6px; padding: 3px 8px;
+    }
+    .map-download { font-size: 14.5px; }
+    .map-download a { font-weight: 700; }
+
     /* Artículos relacionados (clúster) */
     .related { max-width: var(--ancho); margin: 44px auto 0; padding: 0 24px; }
     .related h2 { font-family: var(--serif); font-size: 24px; color: var(--navy); margin: 0 0 16px; }
@@ -534,6 +551,31 @@
       <p>Mapeamos la Ley 21.719 contra controles accionables del CCM y te entregamos la evidencia que la Agencia va a pedir.</p>
       <a href="#">Agenda un diagnóstico →</a>
     </div>
+
+    <h2>Mapa rápido: cada obligación de la Ley 21.719 y su control CCM</h2>
+    <p>Esta es la tabla que uso como punto de partida con los equipos: traduce cada obligación de la ley en el dominio del Cloud Controls Matrix que genera la evidencia. Llévatela y úsala como checklist.</p>
+    <div class="map-wrap">
+      <table class="map-table">
+        <thead>
+          <tr><th>Obligación (Ley 21.719)</th><th>Dominio CCM</th><th>Evidencia que genera</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Registro de actividades de tratamiento</td><td><span class="dom">DSP</span></td><td>Inventario de datos: qué datos, con qué fin y por cuánto tiempo</td></tr>
+          <tr><td>Base de licitud y consentimiento</td><td><span class="dom">GRC</span></td><td>Políticas y registros de consentimiento trazables</td></tr>
+          <tr><td>Derechos del titular (acceso, rectificación, cancelación, oposición, portabilidad)</td><td><span class="dom">IAM</span></td><td>Flujos y bitácoras de atención de solicitudes</td></tr>
+          <tr><td>Privacidad desde el diseño y por defecto</td><td><span class="dom">AIS</span></td><td>Requisitos de privacidad embebidos en el desarrollo</td></tr>
+          <tr><td>Control de accesos a datos personales</td><td><span class="dom">IAM</span></td><td>Mínimo privilegio y matriz de accesos por rol</td></tr>
+          <tr><td>Trazabilidad y registro de accesos</td><td><span class="dom">LOG</span></td><td>Logs que registran cada acceso a los datos</td></tr>
+          <tr><td>Cifrado y protección de datos</td><td><span class="dom">CEK</span></td><td>Cifrado en reposo y tránsito con gestión de claves</td></tr>
+          <tr><td>Evaluación de impacto (EIPD)</td><td><span class="dom">GRC</span></td><td>Riesgos, medidas de mitigación y decisión razonada</td></tr>
+          <tr><td>Notificación de brechas</td><td><span class="dom">SEF</span></td><td>Plan de respuesta, detección y registro del incidente</td></tr>
+          <tr><td>Encargado de tratamiento y terceros</td><td><span class="dom">STA</span></td><td>Contratos, cláusulas y evaluación de proveedores</td></tr>
+          <tr><td>Conservación y eliminación de datos</td><td><span class="dom">DSP</span></td><td>Políticas de retención y borrado seguro</td></tr>
+          <tr><td>Continuidad y resiliencia del servicio</td><td><span class="dom">BCR</span></td><td>Respaldos y plan de recuperación probado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="map-download"><a href="assets/ley-21719-ccm-mapping.csv" download>Descargar la tabla (CSV)</a> para usarla como checklist en tu organización.</p>
 
     <p class="note"><strong>Nota de transparencia:</strong> las cifras legales (montos de multas por tramo, plazos de notificación de brechas y numeración de artículos) deben validarse contra el texto oficial publicado en el Diario Oficial / BCN antes de publicar. Se evitó deliberadamente importar parámetros del RGPD (p. ej., el "4 % de ingresos" o las "72 horas").</p>
 

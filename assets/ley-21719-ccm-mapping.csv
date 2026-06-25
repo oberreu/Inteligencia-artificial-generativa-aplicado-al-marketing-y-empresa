@@ -1,0 +1,13 @@
+Obligacion (Ley 21.719),Dominio CCM v4.1,Codigo,Evidencia que genera
+Registro de actividades de tratamiento,Data Security & Privacy Lifecycle,DSP,Inventario de datos: que datos, con que finalidad y por cuanto tiempo
+Base de licitud y consentimiento,Governance Risk & Compliance,GRC,Politicas y registros de consentimiento trazables
+Derechos del titular (acceso/rectificacion/cancelacion/oposicion/portabilidad),Identity & Access Management,IAM,Flujos y bitacoras de atencion de solicitudes de titulares
+Privacidad desde el diseno y por defecto,Application & Interface Security,AIS,Requisitos de privacidad embebidos en el ciclo de desarrollo
+Control de accesos a datos personales,Identity & Access Management,IAM,Minimo privilegio y matriz de accesos por rol
+Trazabilidad y registro de accesos,Logging & Monitoring,LOG,Logs que registran cada acceso a los datos
+Cifrado y proteccion de datos,Cryptography Encryption & Key Mgmt,CEK,Cifrado en reposo y transito con gestion de claves
+Evaluacion de impacto (EIPD),Governance Risk & Compliance,GRC,Documento de riesgos, medidas de mitigacion y decision razonada
+Notificacion de brechas,Security Incident Mgmt E-Discovery & Forensics,SEF,Plan de respuesta, deteccion y registro del incidente
+Encargado de tratamiento y terceros,Supply Chain Transparency & Accountability,STA,Contratos, clausulas y evaluacion de proveedores
+Conservacion y eliminacion de datos,Data Security & Privacy Lifecycle,DSP,Politicas de retencion y borrado seguro
+Continuidad y resiliencia del servicio,Business Continuity & Operational Resilience,BCR,Respaldos y plan de recuperacion probado
