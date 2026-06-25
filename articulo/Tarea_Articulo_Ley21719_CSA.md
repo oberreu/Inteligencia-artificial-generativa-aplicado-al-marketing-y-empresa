@@ -47,7 +47,7 @@ La ley no se presenta como un problema exclusivamente legal: se demuestra que la
 
 La IA se empleó para organizar la oportunidad editorial, proponer alternativas de título, condensar el artículo, revisar patrones de redacción y generar la imagen destacada. La revisión humana aportó el conocimiento experto, ajustó el tono y corrigió afirmaciones legales o técnicas que podían parecer plausibles, pero no eran exactas.
 
-Entre las correcciones verificadas se encuentran: el régimen real de multas de la ley, la ausencia de un plazo general de 72 horas para notificar brechas y la composición vigente del CCM v4.1, que reúne 207 controles en 17 dominios.
+Entre las correcciones verificadas se encuentran: el régimen real de multas de la ley, la ausencia de un plazo general de 72 horas para notificar brechas y la composición vigente del CCM v4.1, que reúne 197 controles en 17 dominios.
 
 **URL:** <https://oberreu.github.io/Inteligencia-artificial-generativa-aplicado-al-marketing-y-empresa/>
 
@@ -97,7 +97,7 @@ El entregable se construyó mediante prompting iterativo en GitHub Copilot Chat 
 5. **Publicación inicial en GitHub Pages.** Carga del contenido al repositorio y activación de GitHub Pages; verificación del sitio en vivo.
 6. **Rediseño profesional y marca CSA Latam Hub.** Rebranding a 'CSA Latam Hub' (paleta navy/teal), incorporación del rol 'Senior Cloud Solution Architect Manager of Cybersecurity' e imagen destacada de marca.
 7. **Arquitectura pillar + cluster.** Creación de tres artículos de clúster (multas, EIPD y notificación de brechas) interconectados con el pilar para dar profundidad temática.
-8. **Validación factual contra fuente oficial.** Contraste de todas las cifras (UTM, plazos, reincidencia) y la composición del CCM v4.1 (207 controles, 17 dominios) contra el texto oficial de la Ley 21.719 en la BCN (idNorma 1209272), corrigiendo datos imprecisos.
+8. **Validación factual contra fuente oficial.** Contraste de todas las cifras (UTM, plazos, reincidencia) y la composición del CCM v4.1 (197 controles, 17 dominios) contra el texto oficial de la Ley 21.719 en la BCN (idNorma 1209272), corrigiendo datos imprecisos.
 9. **SEO técnico y GEO.** sitemap.xml, robots.txt, verificación en Google Search Console, datos estructurados JSON-LD (BlogPosting, FAQPage, DefinedTermSet), señales de frescura (dateModified / article:modified_time) y párrafo sésamo citable por IA.
 10. **Pulido editorial y eliminación de AI-tells.** Revisión de estilo para eliminar marcas delatoras de IA (en especial el em-dash) y aplicación de prácticas de contenido non-commodity (Hobo / Google 2026).
 11. **Autoría y confianza.** Sección 'Sobre el autor' con foto real y datos de contacto, reforzando E-E-A-T y Entity Trust.

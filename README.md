@@ -37,7 +37,7 @@ Un artículo **pilar** rodeado de tres artículos de **clúster** interconectado
 
 ## 🧪 Tema del artículo
 
-**Ley 21.719 y la nube: el mapa de controles de la CSA** — cómo usar la Cloud Controls Matrix (CCM v4.1: 207 controles en 17 dominios) de la Cloud Security Alliance para traducir las obligaciones de la nueva Ley de Protección de Datos de Chile en controles técnicos verificables, antes de su entrada en plena vigencia en diciembre de 2026.
+**Ley 21.719 y la nube: el mapa de controles de la CSA** — cómo usar la Cloud Controls Matrix (CCM v4.1: 197 controles en 17 dominios) de la Cloud Security Alliance para traducir las obligaciones de la nueva Ley de Protección de Datos de Chile en controles técnicos verificables, antes de su entrada en plena vigencia en diciembre de 2026.
 
 ## 🛠️ Metodología y herramientas
 
